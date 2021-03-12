@@ -25,6 +25,7 @@
     "mbed",
     "cmsis",
     "spl",
+    "std",
     "stm32cube",
     "opencm3",
     "libopencm3",

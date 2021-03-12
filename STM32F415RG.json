@@ -21,6 +21,7 @@
     "libopencm3",
     "cmsis",
     "spl",
+    "std",
     "stm32cube"
   ],
   "name": "1Bitsy",
