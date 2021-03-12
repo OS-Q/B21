@@ -27,6 +27,7 @@
     "cmsis",
     "mbed",
     "stm32cube",
+    "zephyros",
     "zephyr"
   ],
   "name": "ST Nucleo L4R5ZI",

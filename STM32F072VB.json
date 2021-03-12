@@ -6,7 +6,7 @@
     "mcu": "stm32f072vbt6",
     "product_line": "STM32F072xB",
     "zephyr": {
-       "variant": "stm32f072_eval"
+      "variant": "stm32f072_eval"
     }
   },
   "connectivity": [
@@ -22,6 +22,7 @@
     "stm32cube",
     "opencm3",
     "libopencm3",
+    "zephyros",
     "zephyr"
   ],
   "name": "STM32F072-EVAL",

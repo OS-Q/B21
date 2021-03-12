@@ -24,6 +24,7 @@
     "stm32cube",
     "opencm3",
     "libopencm3",
+    "zephyros",
     "zephyr"
   ],
   "name": "ST Nucleo F070RB",

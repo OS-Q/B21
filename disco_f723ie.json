@@ -6,7 +6,7 @@
     "mcu": "stm32f723iek6",
     "product_line": "STM32F723xx",
     "zephyr": {
-       "variant": "stm32f723e_disco"
+      "variant": "stm32f723e_disco"
     }
   },
   "connectivity": [
@@ -30,6 +30,7 @@
     "stm32cube",
     "opencm3",
     "libopencm3",
+    "zephyros",
     "zephyr"
   ],
   "name": "32F723EDISCOVERY",

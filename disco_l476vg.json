@@ -6,7 +6,7 @@
     "mcu": "stm32l476vgt6",
     "product_line": "STM32L476xx",
     "zephyr": {
-       "variant": "stm32l476g_disco"
+      "variant": "stm32l476g_disco"
     }
   },
   "connectivity": [
@@ -30,6 +30,7 @@
     "stm32cube",
     "opencm3",
     "libopencm3",
+    "zephyros",
     "zephyr"
   ],
   "name": "ST 32L476GDISCOVERY",

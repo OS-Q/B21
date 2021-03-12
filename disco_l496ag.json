@@ -6,7 +6,7 @@
     "mcu": "stm32l496agi6",
     "product_line": "STM32L496xx",
     "zephyr": {
-       "variant": "stm32l496g_disco"
+      "variant": "stm32l496g_disco"
     }
   },
   "connectivity": [
@@ -30,6 +30,7 @@
     "stm32cube",
     "opencm3",
     "libopencm3",
+    "zephyros",
     "zephyr"
   ],
   "name": "ST 32L496GDISCOVERY",

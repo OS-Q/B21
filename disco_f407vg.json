@@ -8,7 +8,7 @@
     "variant": "DISCO_F407VG",
     "product_line": "STM32F407xx",
     "zephyr": {
-       "variant": "stm32f4_disco"
+      "variant": "stm32f4_disco"
     }
   },
   "debug": {
@@ -31,6 +31,7 @@
     "opencm3",
     "libopencm3",
     "stm32cube",
+    "zephyros",
     "zephyr"
   ],
   "name": "ST STM32F4DISCOVERY",

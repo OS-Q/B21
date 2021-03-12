@@ -10,7 +10,7 @@
     "product_line": "STM32L475xx",
     "variant": "DISCO_L475VG_IOT",
     "zephyr": {
-       "variant": "disco_l475_iot1"
+      "variant": "disco_l475_iot1"
     }
   },
   "connectivity": [
@@ -37,6 +37,7 @@
     "stm32cube",
     "opencm3",
     "libopencm3",
+    "zephyros",
     "zephyr"
   ],
   "name": "ST B-L475E-IOT01A Discovery kit",

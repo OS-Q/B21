@@ -22,6 +22,7 @@
     "opencm3",
     "libopencm3",
     "stm32cube",
+    "zephyros",
     "zephyr"
   ],
   "name": "Nucleo G071RB",

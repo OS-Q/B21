@@ -6,7 +6,7 @@
     "mcu": "stm32f412zgt6",
     "product_line": "STM32F412Zx",
     "zephyr": {
-       "variant": "stm32f412g_disco"
+      "variant": "stm32f412g_disco"
     }
   },
   "debug": {
@@ -27,6 +27,7 @@
     "stm32cube",
     "opencm3",
     "libopencm3",
+    "zephyros",
     "zephyr"
   ],
   "name": "32F412GDISCOVERY",

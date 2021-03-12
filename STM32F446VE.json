@@ -6,7 +6,7 @@
     "mcu": "stm32f446vet6",
     "product_line": "STM32F446xx",
     "zephyr": {
-       "variant": "96b_stm32_sensor_mez"
+      "variant": "96b_stm32_sensor_mez"
     }
   },
   "connectivity": [
@@ -30,6 +30,7 @@
     "stm32cube",
     "opencm3",
     "libopencm3",
+    "zephyros",
     "zephyr"
   ],
   "name": "96Boards B96B-F446VE",

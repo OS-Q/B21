@@ -40,6 +40,7 @@
     "opencm3",
     "libopencm3",
     "stm32cube",
+    "zephyros",
     "zephyr"
   ],
   "name": "BluePill F103C8",

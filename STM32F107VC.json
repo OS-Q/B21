@@ -6,7 +6,7 @@
     "mcu": "stm32f107vct6",
     "product_line": "STM32F107xC",
     "zephyr": {
-       "variant": "stm3210c_eval"
+      "variant": "stm3210c_eval"
     }
   },
   "debug": {
@@ -19,6 +19,7 @@
     "stm32cube",
     "opencm3",
     "libopencm3",
+    "zephyros",
     "zephyr"
   ],
   "name": "STM3210C-EVAL",

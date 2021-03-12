@@ -27,6 +27,7 @@
     "opencm3",
     "libopencm3",
     "mbed",
+    "zephyros",
     "zephyr"
   ],
   "name": "ST Nucleo F413ZH",

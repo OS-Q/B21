@@ -6,7 +6,7 @@
     "mcu": "stm32h747xih6",
     "product_line": "STM32H747xx",
     "zephyr": {
-       "variant": "stm32h747i_disco_m7"
+      "variant": "stm32h747i_disco_m7"
     }
   },
   "connectivity": [
@@ -31,6 +31,7 @@
     "opencm3",
     "libopencm3",
     "mbed",
+    "zephyros",
     "zephyr"
   ],
   "name": "STM32H747I-DISCO",

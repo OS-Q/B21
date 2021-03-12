@@ -7,7 +7,7 @@
     "product_line": "STM32F746xx",
     "variant": "DISCO_F746NG",
     "zephyr": {
-       "variant": "stm32f746g_disco"
+      "variant": "stm32f746g_disco"
     }
   },
   "connectivity": [
@@ -33,6 +33,7 @@
     "stm32cube",
     "opencm3",
     "libopencm3",
+    "zephyros",
     "zephyr"
   ],
   "name": "ST 32F746GDISCOVERY",

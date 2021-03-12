@@ -29,6 +29,7 @@
   "frameworks": [
     "cmsis",
     "stm32cube",
+    "zephyros",
     "zephyr"
   ],
   "name": "ST Nucleo H745ZI-Q",

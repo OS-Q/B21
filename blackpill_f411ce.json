@@ -22,6 +22,7 @@
     "stm32cube",
     "opencm3",
     "libopencm3",
+    "zephyros",
     "zephyr"
   ],
   "name": "WeAct BlackPill V2.0 (BlackPill F411CE)",

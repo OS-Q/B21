@@ -6,7 +6,7 @@
     "mcu": "stm32f373vct6",
     "product_line": "STM32F373xC",
     "zephyr": {
-       "variant": "stm32373c_eval"
+      "variant": "stm32373c_eval"
     }
   },
   "connectivity": [
@@ -22,6 +22,7 @@
     "stm32cube",
     "opencm3",
     "libopencm3",
+    "zephyros",
     "zephyr"
   ],
   "name": "STM32373C-EVAL",

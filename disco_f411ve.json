@@ -6,7 +6,7 @@
     "mcu": "stm32f411vet6",
     "product_line": "STM32F411xE",
     "zephyr": {
-       "variant": "stm32f411e_disco"
+      "variant": "stm32f411e_disco"
     }
   },
   "debug": {
@@ -26,6 +26,7 @@
     "stm32cube",
     "opencm3",
     "libopencm3",
+    "zephyros",
     "zephyr"
   ],
   "name": "ST 32F411EDISCOVERY",
