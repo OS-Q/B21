@@ -35,6 +35,7 @@
     "cmsis",
     "mbed",
     "stm32cube",
+    "opencm3",
     "libopencm3",
     "zephyr"
   ],

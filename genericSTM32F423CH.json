@@ -16,6 +16,7 @@
     "arduino",
     "cmsis",
     "stm32cube",
+    "opencm3",
     "libopencm3"
   ],
   "name": "STM32F423CH (320k RAM. 1536k Flash)",

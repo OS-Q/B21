@@ -18,6 +18,7 @@
     "cmsis",
     "spl",
     "stm32cube",
+    "opencm3",
     "libopencm3"
   ],
   "name": "STM32F401RE (96k RAM. 512k Flash)",

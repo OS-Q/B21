@@ -17,6 +17,7 @@
     "arduino",
     "cmsis",
     "stm32cube",
+    "opencm3",
     "libopencm3"
   ],
   "name": "STM32F413CG (320k RAM. 1024k Flash)",

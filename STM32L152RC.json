@@ -16,6 +16,7 @@
     "mbed",
     "cmsis",
     "stm32cube",
+    "opencm3",
     "libopencm3"
   ],
   "name": "NAMote72",

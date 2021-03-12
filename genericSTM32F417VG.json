@@ -17,6 +17,7 @@
     "arduino",
     "cmsis",
     "stm32cube",
+    "opencm3",
     "libopencm3"
   ],
   "name": "STM32F417VG (128k RAM. 1024k Flash)",

@@ -17,6 +17,7 @@
     "arduino",
     "cmsis",
     "stm32cube",
+    "opencm3",
     "libopencm3"
   ],
   "name": "STM32F411RC (128k RAM. 256k Flash)",

@@ -34,6 +34,7 @@
     "arduino",
     "cmsis",
     "stm32cube",
+    "opencm3",
     "libopencm3"
   ],
   "name": "STM32F407VE (192k RAM. 512k Flash)",

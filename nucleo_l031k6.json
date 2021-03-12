@@ -24,6 +24,7 @@
     "mbed",
     "spl",
     "stm32cube",
+    "opencm3",
     "libopencm3"
   ],
   "name": "Nucleo L031K6",

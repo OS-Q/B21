@@ -26,6 +26,7 @@
     "cmsis",
     "mbed",
     "stm32cube",
+    "opencm3",
     "libopencm3"
   ],
   "name": "Seeed Wio 3G",

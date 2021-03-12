@@ -23,6 +23,7 @@
   "frameworks": [
     "cmsis",
     "spl",
+    "opencm3",
     "libopencm3",
     "stm32cube"
   ],

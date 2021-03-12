@@ -16,6 +16,7 @@
     "cmsis",
     "mbed",
     "stm32cube",
+    "opencm3",
     "libopencm3"
   ],
   "name": "MultiTech xDot",

@@ -22,6 +22,7 @@
   "frameworks": [
     "cmsis",
     "stm32cube",
+    "opencm3",
     "libopencm3"
   ],
   "name": "ST 32L100DISCOVERY",

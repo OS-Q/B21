@@ -22,6 +22,7 @@
     "cmsis",
     "spl",
     "stm32cube",
+    "opencm3",
     "libopencm3"
   ],
   "name": "ST Nucleo L011K4",

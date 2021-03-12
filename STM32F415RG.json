@@ -17,6 +17,7 @@
     "svd_path": "STM32F41x.svd"
   },
   "frameworks": [
+    "opencm3",
     "libopencm3",
     "cmsis",
     "spl",
