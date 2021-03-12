@@ -35,6 +35,7 @@
   },
   "frameworks": [
     "arduino",
+    "ino",
     "cmsis",
     "spl",
     "opencm3",

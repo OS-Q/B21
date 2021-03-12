@@ -21,6 +21,7 @@
   },
   "frameworks": [
     "arduino",
+    "ino",
     "cmsis",
     "stm32cube",
     "opencm3",
