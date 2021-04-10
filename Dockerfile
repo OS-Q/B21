@@ -1,38 +1,18 @@
-FROM ubuntu
-MAINTAINER Qitas "qitas@qitas.cn"
+# Container image that runs your code
+FROM ubuntu:latest
 
-RUN apt-get update
-RUN apt-get install -y \
-    libgtest-dev \
-    git \
-    cmake \
-    gcc \
-    wget \
-    lcov \
-    libfftw3-dev \
-    g++
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
 
-# Install latest CMAKE
-ARG version=3.14
-ARG build=0
+# Install prerequisites
+RUN apt-get --quiet=2 update && apt-get install --quiet=2 --assume-yes git python3 python3-pip wget
 
-RUN apt-get purge -y cmake
-RUN mkdir /tmp/cmake
-RUN cd /tmp/cmake && wget https://cmake.org/files/v$version/cmake-$version.$build.tar.gz
-RUN cd /tmp/cmake && tar -xzvf cmake-$version.$build.tar.gz
-RUN cd /tmp/cmake/cmake-$version.$build/ && ./bootstrap
-RUN cd /tmp/cmake/cmake-$version.$build/ && make
-RUN cd /tmp/cmake/cmake-$version.$build/ && make install
+# Install PlatformIO
+RUN pip3 install --quiet --upgrade platformio
+CMD /bin/bash
 
-# configure GTEST
-#RUN cd /usr/src/gtest && cmake CMakeLists.txt
-#RUN cd /usr/src/gtest && make
-#RUN cp /usr/src/gtest/*.a /usr/lib
-#RUN mkdir /usr/local/lib/gtest
-#RUN ln -s /usr/lib/libgtest.a /usr/local/lib/gtest/libgtest.a
-#RUN ln -s /usr/lib/libgtest_main.a /usr/local/lib/gtest/libgtest_main.a
-
-RUN apt-get install -y \
-    python \
-    python-pip
-RUN pip install cpp-coveralls
+# Copies your code file from your action repository to the filesystem path `/` of the container
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+# Code file to execute when the docker container starts up (`entrypoint.sh`)
+ENTRYPOINT ["/entrypoint.sh"]
