@@ -1,0 +1,16 @@
+*.db
+*.pyc
+__pycache__/
+*.vscode/
+*.pio/
+*.rst
+# *.md
+README*
+LICENSE*
+*.png
+*.jpg
+examples/**/*.yml
+**/CONTR*
+**/CHANGE*
+examples/**/*.md
+
