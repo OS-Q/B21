@@ -1,0 +1,72 @@
+name: PIO
+
+on:
+  push:
+    branches:
+      - pio
+    paths:
+      - 'boards/**'
+      - 'builder/**'
+      - 'misc/**'
+      - 'examples/**'
+      - 'platform.json'
+      - 'platform.py'
+
+jobs:
+  PIO:
+    strategy:
+      fail-fast: false
+      matrix:
+        example:
+          - "arduino-blink"
+          - "arduino-briki-internal-libs"
+          - "arduino-external-libs"
+          - "arduino-internal-libs"
+          - "arduino-web-thing-led"
+          - "mbed-blink"
+          - "mbed-dsp"
+          - "mbed-serial"
+          - "simba-blink"
+          - "zephyr-blink"
+          - "zephyr-drivers-lcd-hd44780"
+          - "zephyr-subsys-logger"
+
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
+          fetch-depth: 1
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -U https://github.com/platformio/platformio/archive/develop.zip
+          pio platform install file://.
+
+      - name: Build examples
+        if: success()
+        working-directory: examples
+        run: |
+          pio run -d ${{ matrix.example }
+
+  pio_tail:
+    needs:
+      - PIO
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: notification
+        uses: Qful/mqtt-action@master
+        with:
+          protocol: mqtt
+          host: ${{secrets.MQTT_SERVER}}
+          port: 1883
+          username: ${{secrets.MQTT_USERNAME}}
+          password: ${{secrets.MQTT_PASSWORD}}
+          topic: ${{github.repository}}/${{github.workflow}}
+          message: "PIO failure"
